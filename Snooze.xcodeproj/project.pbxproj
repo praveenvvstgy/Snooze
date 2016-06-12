@@ -54,7 +54,7 @@
 		98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E4D1D0D25A8003041D3 /* Snooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E501D0D25A8003041D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4926E521D0D25A8003041D3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ../SplashViewController.swift; sourceTree = "<group>"; };
+		B4926E521D0D25A8003041D3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B4926E551D0D25A8003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4926E571D0D25A8003041D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4926E5A1D0D25A8003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 				B4926E941D0D3938003041D3 /* Lato-Regular.ttf */,
 				B4926E951D0D3938003041D3 /* Lato-Semibold.ttf */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F25A82030EFD624FE84A6DAB /* Pods */ = {
@@ -326,6 +326,7 @@
 				TargetAttributes = {
 					B4926E4C1D0D25A8003041D3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 42K4FLWU7X;
 					};
 					B4926E601D0D25A8003041D3 = {
 						CreatedOnToolsVersion = 7.3;
@@ -674,7 +675,9 @@
 			baseConfigurationReference = 74CCFF235078C2071D8C7BD1 /* Pods-Snooze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Snooze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.Snooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -686,7 +689,9 @@
 			baseConfigurationReference = B492CFEAC613C7546B64C2CC /* Pods-Snooze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Snooze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.Snooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
