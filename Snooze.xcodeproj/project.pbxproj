@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2827DF1F10438CCEC08B3D4E /* Pods_SnoozeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */; };
+		6152BA635A1A435EAB359680 /* Pods_Snooze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014E30DCF01623E2FDDFDD95 /* Pods_Snooze.framework */; };
+		6D608BE66A858FBD517C54F1 /* Pods_SnoozeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */; };
 		B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E501D0D25A8003041D3 /* AppDelegate.swift */; };
-		B4926E531D0D25A8003041D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E521D0D25A8003041D3 /* ViewController.swift */; };
+		B4926E531D0D25A8003041D3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E521D0D25A8003041D3 /* SplashViewController.swift */; };
 		B4926E561D0D25A8003041D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4926E541D0D25A8003041D3 /* Main.storyboard */; };
 		B4926E581D0D25A8003041D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4926E571D0D25A8003041D3 /* Assets.xcassets */; };
 		B4926E5B1D0D25A8003041D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4926E591D0D25A8003041D3 /* LaunchScreen.storyboard */; };
 		B4926E661D0D25A9003041D3 /* SnoozeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E651D0D25A9003041D3 /* SnoozeTests.swift */; };
 		B4926E711D0D25A9003041D3 /* SnoozeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E701D0D25A9003041D3 /* SnoozeUITests.swift */; };
+		B4926E8C1D0D2808003041D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4926E851D0D2808003041D3 /* Localizable.strings */; };
+		B4926E8F1D0D2913003041D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E8E1D0D2913003041D3 /* Constants.swift */; };
+		B4926E961D0D3938003041D3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4926E911D0D3938003041D3 /* Lato-Bold.ttf */; };
+		B4926E971D0D3938003041D3 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4926E921D0D3938003041D3 /* Lato-Hairline.ttf */; };
+		B4926E981D0D3938003041D3 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4926E931D0D3938003041D3 /* Lato-Medium.ttf */; };
+		B4926E991D0D3938003041D3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4926E941D0D3938003041D3 /* Lato-Regular.ttf */; };
+		B4926E9A1D0D3938003041D3 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4926E951D0D3938003041D3 /* Lato-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014E30DCF01623E2FDDFDD95 /* Pods_Snooze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snooze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		015AC05227D3E6E35F9A9127 /* Pods-SnoozeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnoozeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnoozeTests/Pods-SnoozeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B82234C9936744EE6D41E8A /* Pods-SnoozeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnoozeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnoozeUITests/Pods-SnoozeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26B5BBD33C2D398165D8BCAA /* Pods-SnoozeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnoozeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnoozeTests/Pods-SnoozeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AAB5C3B3BEF5960B691B8C3 /* Pods-SnoozeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnoozeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnoozeUITests/Pods-SnoozeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CCFF235078C2071D8C7BD1 /* Pods-Snooze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snooze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snooze/Pods-Snooze.debug.xcconfig"; sourceTree = "<group>"; };
+		98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E4D1D0D25A8003041D3 /* Snooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E501D0D25A8003041D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4926E521D0D25A8003041D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4926E521D0D25A8003041D3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ../SplashViewController.swift; sourceTree = "<group>"; };
 		B4926E551D0D25A8003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4926E571D0D25A8003041D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4926E5A1D0D25A8003041D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +65,14 @@
 		B4926E6C1D0D25A9003041D3 /* SnoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoozeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E701D0D25A9003041D3 /* SnoozeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeUITests.swift; sourceTree = "<group>"; };
 		B4926E721D0D25A9003041D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4926E861D0D2808003041D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B4926E8E1D0D2913003041D3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4926E911D0D3938003041D3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		B4926E921D0D3938003041D3 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		B4926E931D0D3938003041D3 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		B4926E941D0D3938003041D3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		B4926E951D0D3938003041D3 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		B492CFEAC613C7546B64C2CC /* Pods-Snooze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snooze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snooze/Pods-Snooze.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6152BA635A1A435EAB359680 /* Pods_Snooze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D608BE66A858FBD517C54F1 /* Pods_SnoozeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2827DF1F10438CCEC08B3D4E /* Pods_SnoozeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54619B95A9C126619A3E84DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				014E30DCF01623E2FDDFDD95 /* Pods_Snooze.framework */,
+				739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */,
+				98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4926E441D0D25A8003041D3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +120,8 @@
 				B4926E641D0D25A8003041D3 /* SnoozeTests */,
 				B4926E6F1D0D25A9003041D3 /* SnoozeUITests */,
 				B4926E4E1D0D25A8003041D3 /* Products */,
+				F25A82030EFD624FE84A6DAB /* Pods */,
+				54619B95A9C126619A3E84DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +138,13 @@
 		B4926E4F1D0D25A8003041D3 /* Snooze */ = {
 			isa = PBXGroup;
 			children = (
+				B4926E8D1D0D2901003041D3 /* Helpers */,
+				B4926E7E1D0D2808003041D3 /* Controllers */,
+				B4926E821D0D2808003041D3 /* Models */,
+				B4926E831D0D2808003041D3 /* Resources */,
+				B4926E871D0D2808003041D3 /* Stores */,
+				B4926E881D0D2808003041D3 /* Views */,
 				B4926E501D0D25A8003041D3 /* AppDelegate.swift */,
-				B4926E521D0D25A8003041D3 /* ViewController.swift */,
-				B4926E541D0D25A8003041D3 /* Main.storyboard */,
 				B4926E571D0D25A8003041D3 /* Assets.xcassets */,
 				B4926E591D0D25A8003041D3 /* LaunchScreen.storyboard */,
 				B4926E5C1D0D25A8003041D3 /* Info.plist */,
@@ -125,6 +170,86 @@
 			path = SnoozeUITests;
 			sourceTree = "<group>";
 		};
+		B4926E7E1D0D2808003041D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E521D0D25A8003041D3 /* SplashViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B4926E821D0D2808003041D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4926E831D0D2808003041D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E901D0D38D8003041D3 /* Fonts */,
+				B4926E841D0D2808003041D3 /* Localizable */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4926E841D0D2808003041D3 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E851D0D2808003041D3 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		B4926E871D0D2808003041D3 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		B4926E881D0D2808003041D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E541D0D25A8003041D3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4926E8D1D0D2901003041D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E8E1D0D2913003041D3 /* Constants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B4926E901D0D38D8003041D3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B4926E911D0D3938003041D3 /* Lato-Bold.ttf */,
+				B4926E921D0D3938003041D3 /* Lato-Hairline.ttf */,
+				B4926E931D0D3938003041D3 /* Lato-Medium.ttf */,
+				B4926E941D0D3938003041D3 /* Lato-Regular.ttf */,
+				B4926E951D0D3938003041D3 /* Lato-Semibold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		F25A82030EFD624FE84A6DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74CCFF235078C2071D8C7BD1 /* Pods-Snooze.debug.xcconfig */,
+				B492CFEAC613C7546B64C2CC /* Pods-Snooze.release.xcconfig */,
+				015AC05227D3E6E35F9A9127 /* Pods-SnoozeTests.debug.xcconfig */,
+				26B5BBD33C2D398165D8BCAA /* Pods-SnoozeTests.release.xcconfig */,
+				0B82234C9936744EE6D41E8A /* Pods-SnoozeUITests.debug.xcconfig */,
+				6AAB5C3B3BEF5960B691B8C3 /* Pods-SnoozeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4926E751D0D25A9003041D3 /* Build configuration list for PBXNativeTarget "Snooze" */;
 			buildPhases = (
+				38DE7849AD5D56EA97F976C0 /* [CP] Check Pods Manifest.lock */,
 				B4926E491D0D25A8003041D3 /* Sources */,
 				B4926E4A1D0D25A8003041D3 /* Frameworks */,
 				B4926E4B1D0D25A8003041D3 /* Resources */,
+				43CF89F88F37E6559B89A9D4 /* [CP] Embed Pods Frameworks */,
+				818A61344AB2F29AF0102ED6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4926E781D0D25A9003041D3 /* Build configuration list for PBXNativeTarget "SnoozeTests" */;
 			buildPhases = (
+				EB2200C38BC54322F8CBBC68 /* [CP] Check Pods Manifest.lock */,
 				B4926E5D1D0D25A8003041D3 /* Sources */,
 				B4926E5E1D0D25A8003041D3 /* Frameworks */,
 				B4926E5F1D0D25A8003041D3 /* Resources */,
+				AF2E42619B0FBC4A4F4FE7E0 /* [CP] Embed Pods Frameworks */,
+				477DA29EC8E552B6B023D2F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4926E7B1D0D25A9003041D3 /* Build configuration list for PBXNativeTarget "SnoozeUITests" */;
 			buildPhases = (
+				B02F303E51F645AF6857E800 /* [CP] Check Pods Manifest.lock */,
 				B4926E681D0D25A9003041D3 /* Sources */,
 				B4926E691D0D25A9003041D3 /* Frameworks */,
 				B4926E6A1D0D25A9003041D3 /* Resources */,
+				347FD29B18880628A7DE3CE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +363,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4926E5B1D0D25A8003041D3 /* LaunchScreen.storyboard in Resources */,
+				B4926E961D0D3938003041D3 /* Lato-Bold.ttf in Resources */,
+				B4926E9A1D0D3938003041D3 /* Lato-Semibold.ttf in Resources */,
+				B4926E971D0D3938003041D3 /* Lato-Hairline.ttf in Resources */,
+				B4926E991D0D3938003041D3 /* Lato-Regular.ttf in Resources */,
+				B4926E8C1D0D2808003041D3 /* Localizable.strings in Resources */,
 				B4926E581D0D25A8003041D3 /* Assets.xcassets in Resources */,
+				B4926E981D0D3938003041D3 /* Lato-Medium.ttf in Resources */,
 				B4926E561D0D25A8003041D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +390,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		347FD29B18880628A7DE3CE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnoozeUITests/Pods-SnoozeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38DE7849AD5D56EA97F976C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43CF89F88F37E6559B89A9D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snooze/Pods-Snooze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477DA29EC8E552B6B023D2F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnoozeTests/Pods-SnoozeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		818A61344AB2F29AF0102ED6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snooze/Pods-Snooze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2E42619B0FBC4A4F4FE7E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnoozeTests/Pods-SnoozeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02F303E51F645AF6857E800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2200C38BC54322F8CBBC68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4926E491D0D25A8003041D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4926E531D0D25A8003041D3 /* ViewController.swift in Sources */,
+				B4926E531D0D25A8003041D3 /* SplashViewController.swift in Sources */,
 				B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */,
+				B4926E8F1D0D2913003041D3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +562,7 @@
 				B4926E551D0D25A8003041D3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B4926E591D0D25A8003041D3 /* LaunchScreen.storyboard */ = {
@@ -307,6 +571,14 @@
 				B4926E5A1D0D25A8003041D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4926E851D0D2808003041D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4926E861D0D2808003041D3 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +671,7 @@
 		};
 		B4926E761D0D25A9003041D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CCFF235078C2071D8C7BD1 /* Pods-Snooze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snooze/Info.plist;
@@ -410,6 +683,7 @@
 		};
 		B4926E771D0D25A9003041D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B492CFEAC613C7546B64C2CC /* Pods-Snooze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snooze/Info.plist;
@@ -421,6 +695,7 @@
 		};
 		B4926E791D0D25A9003041D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015AC05227D3E6E35F9A9127 /* Pods-SnoozeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SnoozeTests/Info.plist;
@@ -433,6 +708,7 @@
 		};
 		B4926E7A1D0D25A9003041D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B5BBD33C2D398165D8BCAA /* Pods-SnoozeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SnoozeTests/Info.plist;
@@ -445,6 +721,7 @@
 		};
 		B4926E7C1D0D25A9003041D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B82234C9936744EE6D41E8A /* Pods-SnoozeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SnoozeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +733,7 @@
 		};
 		B4926E7D1D0D25A9003041D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAB5C3B3BEF5960B691B8C3 /* Pods-SnoozeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SnoozeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +762,7 @@
 				B4926E771D0D25A9003041D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4926E781D0D25A9003041D3 /* Build configuration list for PBXNativeTarget "SnoozeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +771,7 @@
 				B4926E7A1D0D25A9003041D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4926E7B1D0D25A9003041D3 /* Build configuration list for PBXNativeTarget "SnoozeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +780,7 @@
 				B4926E7D1D0D25A9003041D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
