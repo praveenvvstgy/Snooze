@@ -9,6 +9,7 @@ target 'Snooze' do
   pod 'Firebase'
   pod 'SwiftyJSON'
   pod 'ChameleonFramework/Swift'
+  pod 'Spring', '~> 1.0.3'
 
   target 'SnoozeTests' do
     inherit! :search_paths
