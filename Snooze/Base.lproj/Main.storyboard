@@ -5,9 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+            <string>Lato-Medium</string>
             <string>Lato-Medium</string>
             <string>Lato-Medium</string>
             <string>Lato-Medium</string>
@@ -41,9 +44,11 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="Spring"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
@@ -112,7 +117,7 @@
                                                         <color key="value" red="0.94901960784313721" green="0.71372549019607845" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                         <real key="value" value="0.5"/>
                                                     </userDefinedRuntimeAttribute>
@@ -120,13 +125,19 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="45U-4u-jDq" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Z5e-P9-GOd">
+                                                        <segue key="commit" inheritsFrom="parent" id="6f8-Ij-aeV"/>
+                                                        <segue key="preview" inheritsFrom="commit" id="eot-5E-Mw2"/>
+                                                    </segue>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYF-Oo-jgk" customClass="SpringButton" customModule="Spring">
                                                 <rect key="frame" x="0.0" y="76" width="288" height="68"/>
-                                                <color key="backgroundColor" red="0.1450980392" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="18"/>
                                                 <state key="normal" title="SIGNUP">
-                                                    <color key="titleColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.1450980392" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -136,10 +147,10 @@
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
-                                                        <color key="value" red="0.94901960784313721" green="0.71372549019607845" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.14509803921568626" green="0.15686274509803921" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
@@ -147,6 +158,12 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="kIl-lP-a3e" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="gF9-Qq-74K">
+                                                        <segue key="commit" inheritsFrom="parent" id="BJa-dp-C3n"/>
+                                                        <segue key="preview" inheritsFrom="commit" id="JPb-Pg-KZL"/>
+                                                    </segue>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -198,16 +215,197 @@
                     <view key="view" contentMode="scaleToFill" id="kJ4-Mi-jge">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faces" translatesAutoresizingMaskIntoConstraints="NO" id="MI5-29-9Id">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="284"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-g6-Ksr" customClass="SlantingView" customModule="Snooze" customModuleProvider="target">
+                                <rect key="frame" x="-4" y="50" width="328" height="518"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4I-Lr-cK2" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="183" y="0.0" width="137" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="IiT-hr-cbt"/>
+                                            <constraint firstAttribute="height" constant="36" id="deU-dP-tdI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="36"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.1450980392" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="s4I-Lr-cK2" secondAttribute="trailing" constant="8" id="51g-kh-9br"/>
+                                    <constraint firstItem="s4I-Lr-cK2" firstAttribute="top" secondItem="x4d-g6-Ksr" secondAttribute="top" id="L6Q-Bj-hPo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="slantedEdge" value="top"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shortOffset">
+                                        <real key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="slantingRectColor">
+                                        <color key="value" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqq-yX-4l3" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="16" y="20" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="Zk6-MP-Uwn"/>
+                                    <constraint firstAttribute="height" constant="33" id="dJW-B0-pxc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissLoginVC" destination="45U-4u-jDq" eventType="touchUpInside" id="rTS-eE-uo3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MI5-29-9Id" firstAttribute="leading" secondItem="kJ4-Mi-jge" secondAttribute="leadingMargin" constant="-20" id="BC8-lK-wij"/>
+                            <constraint firstItem="dqq-yX-4l3" firstAttribute="top" secondItem="SyL-tM-CiG" secondAttribute="bottom" id="C3E-ky-RhU"/>
+                            <constraint firstItem="dqq-yX-4l3" firstAttribute="leading" secondItem="kJ4-Mi-jge" secondAttribute="leadingMargin" id="Iot-64-Vap"/>
+                            <constraint firstItem="MI5-29-9Id" firstAttribute="top" secondItem="kJ4-Mi-jge" secondAttribute="topMargin" id="O6f-4y-N9a"/>
+                            <constraint firstItem="x4d-g6-Ksr" firstAttribute="top" secondItem="SyL-tM-CiG" secondAttribute="bottom" constant="30" id="OxX-VN-VhM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MI5-29-9Id" secondAttribute="trailing" constant="-20" id="P3G-jJ-3yb"/>
+                            <constraint firstItem="x4d-g6-Ksr" firstAttribute="leading" secondItem="kJ4-Mi-jge" secondAttribute="leadingMargin" constant="-20" id="PIU-IP-dgb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x4d-g6-Ksr" secondAttribute="trailing" constant="-20" id="WrZ-rV-Qby"/>
+                            <constraint firstItem="MI5-29-9Id" firstAttribute="height" secondItem="kJ4-Mi-jge" secondAttribute="height" multiplier="0.5" id="YSu-fI-SFE"/>
+                            <constraint firstItem="Gvf-6B-Glf" firstAttribute="top" secondItem="x4d-g6-Ksr" secondAttribute="bottom" id="dBs-1e-Veh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNV-i7-mvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="323"/>
+            <point key="canvasLocation" x="618" y="-105"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="TEL-Gk-X1y">
+            <objects>
+                <viewController id="kIl-lP-a3e" customClass="SignupViewController" customModule="Snooze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CjL-yA-pkD"/>
+                        <viewControllerLayoutGuide type="bottom" id="BLK-yf-zBM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="riU-nO-X87">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faces" translatesAutoresizingMaskIntoConstraints="NO" id="B6x-fs-TYX">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="284"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="702-9J-XVV" customClass="SlantingView" customModule="Snooze" customModuleProvider="target">
+                                <rect key="frame" x="-4" y="50" width="328" height="518"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68a-EW-xPb" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="150" y="0.0" width="170" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="2A3-7w-BUX"/>
+                                            <constraint firstAttribute="height" constant="36" id="WiG-Z4-hUe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="36"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.1450980392" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="68a-EW-xPb" secondAttribute="trailing" constant="8" id="68D-BN-bQ2"/>
+                                    <constraint firstItem="68a-EW-xPb" firstAttribute="top" secondItem="702-9J-XVV" secondAttribute="top" id="I3N-4W-aT4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="slantedEdge" value="top"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="longOffset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shortOffset">
+                                        <real key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="slantingRectColor">
+                                        <color key="value" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-o0-Cav" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4ZO-sr-VUS"/>
+                                    <constraint firstAttribute="height" constant="30" id="Z0g-FJ-JFx"/>
+                                </constraints>
+                                <color key="tintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissSignupVC" destination="kIl-lP-a3e" eventType="touchUpOutside" id="3Jg-1b-Aje"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EH0-o0-Cav" firstAttribute="leading" secondItem="riU-nO-X87" secondAttribute="leadingMargin" id="A09-gD-1JZ"/>
+                            <constraint firstItem="EH0-o0-Cav" firstAttribute="top" secondItem="CjL-yA-pkD" secondAttribute="bottom" id="DQM-MJ-mZS"/>
+                            <constraint firstItem="B6x-fs-TYX" firstAttribute="top" secondItem="riU-nO-X87" secondAttribute="topMargin" id="DhI-nE-me8"/>
+                            <constraint firstItem="702-9J-XVV" firstAttribute="leading" secondItem="riU-nO-X87" secondAttribute="leadingMargin" constant="-20" id="VHH-iQ-phk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="702-9J-XVV" secondAttribute="trailing" constant="-20" id="Yep-yz-R9N"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="702-9J-XVV" secondAttribute="bottom" id="ZYT-hp-gg1"/>
+                            <constraint firstItem="702-9J-XVV" firstAttribute="top" secondItem="CjL-yA-pkD" secondAttribute="bottom" constant="30" id="eWa-9J-Ead"/>
+                            <constraint firstItem="B6x-fs-TYX" firstAttribute="height" secondItem="riU-nO-X87" secondAttribute="height" multiplier="0.5" id="isq-rY-TZa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B6x-fs-TYX" secondAttribute="trailing" constant="-20" id="jq2-LA-W1m"/>
+                            <constraint firstItem="B6x-fs-TYX" firstAttribute="leading" secondItem="riU-nO-X87" secondAttribute="leadingMargin" constant="-20" id="nif-IF-e9d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hrY-4H-MPP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tso-Tf-8yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="627"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="33" height="33"/>
         <image name="faces" width="1000" height="1000"/>
         <image name="logo" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gF9-Qq-74K"/>
+        <segue reference="Z5e-P9-GOd"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignupViewController.swift
 //  Snooze
 //
 //  Created by Praveen Gowda I V on 6/19/16.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignupViewController: UIViewController {
 
-    @IBAction func dismissLoginVC() {
+    @IBAction func dismissSignupVC() {
         dismissViewControllerAnimated(true, completion: nil)
     }
     

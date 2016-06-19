@@ -12,6 +12,7 @@
 		6D608BE66A858FBD517C54F1 /* Pods_SnoozeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */; };
 		ACADA1DF1D16509A00CBFCF3 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADA1DE1D16509A00CBFCF3 /* Direction.swift */; };
 		ACADA1E11D16728000CBFCF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADA1E01D16728000CBFCF3 /* LoginViewController.swift */; };
+		ACADA1E31D1676CE00CBFCF3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACADA1E21D1676CE00CBFCF3 /* SignupViewController.swift */; };
 		ACF9694F1D159B1F00B44B49 /* SlantingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9694E1D159B1F00B44B49 /* SlantingView.swift */; };
 		ACF969511D164DFE00B44B49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF969501D164DFE00B44B49 /* Extensions.swift */; };
 		B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E501D0D25A8003041D3 /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 		98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACADA1DE1D16509A00CBFCF3 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		ACADA1E01D16728000CBFCF3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACADA1E21D1676CE00CBFCF3 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		ACF9694E1D159B1F00B44B49 /* SlantingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlantingView.swift; sourceTree = "<group>"; };
 		ACF969501D164DFE00B44B49 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Helpers/Extensions.swift; sourceTree = "<group>"; };
 		B4926E4D1D0D25A8003041D3 /* Snooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 			children = (
 				B4926E521D0D25A8003041D3 /* SplashViewController.swift */,
 				ACADA1E01D16728000CBFCF3 /* LoginViewController.swift */,
+				ACADA1E21D1676CE00CBFCF3 /* SignupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 			files = (
 				ACADA1E11D16728000CBFCF3 /* LoginViewController.swift in Sources */,
 				ACF969511D164DFE00B44B49 /* Extensions.swift in Sources */,
+				ACADA1E31D1676CE00CBFCF3 /* SignupViewController.swift in Sources */,
 				ACF9694F1D159B1F00B44B49 /* SlantingView.swift in Sources */,
 				B4926E531D0D25A8003041D3 /* SplashViewController.swift in Sources */,
 				B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */,
