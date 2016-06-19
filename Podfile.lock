@@ -25,8 +25,18 @@ PODS:
 DEPENDENCIES:
   - ChameleonFramework/Swift
   - Firebase
-  - Spring (~> 1.0.3)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift2
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -39,6 +49,6 @@ SPEC CHECKSUMS:
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 6300fd36c23d04de65b96baf37f5ab6595149533
+PODFILE CHECKSUM: 7c0b012c85f7baab6977b43606120bb62f9f8485
 
 COCOAPODS: 1.0.0

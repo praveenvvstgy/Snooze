@@ -13,7 +13,11 @@ struct Config {
 }
 
 struct Color {
-    
+    static let primaryColor = UIColor(red:0.15, green:0.16, blue:0.22, alpha:1.00)
+    static let secondaryColor = UIColor(red:0.40, green:0.44, blue:0.47, alpha:1.00)
+    static let lighterSecondaryColor = UIColor(red:0.71, green:0.71, blue:0.72, alpha:1.00)
+    static let accentColor = UIColor(red:0.71, green:0.71, blue:0.72, alpha:1.00)
+    static let textColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.00)
 }
 
 struct Font {

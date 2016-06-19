@@ -9,7 +9,7 @@ target 'Snooze' do
   pod 'Firebase'
   pod 'SwiftyJSON'
   pod 'ChameleonFramework/Swift'
-  pod 'Spring', '~> 1.0.3'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 
   target 'SnoozeTests' do
     inherit! :search_paths

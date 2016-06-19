@@ -10,6 +10,8 @@
 		2827DF1F10438CCEC08B3D4E /* Pods_SnoozeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */; };
 		6152BA635A1A435EAB359680 /* Pods_Snooze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014E30DCF01623E2FDDFDD95 /* Pods_Snooze.framework */; };
 		6D608BE66A858FBD517C54F1 /* Pods_SnoozeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */; };
+		ACF9694F1D159B1F00B44B49 /* SlantingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9694E1D159B1F00B44B49 /* SlantingView.swift */; };
+		ACF969511D164DFE00B44B49 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF969501D164DFE00B44B49 /* Extensions.swift */; };
 		B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E501D0D25A8003041D3 /* AppDelegate.swift */; };
 		B4926E531D0D25A8003041D3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4926E521D0D25A8003041D3 /* SplashViewController.swift */; };
 		B4926E561D0D25A8003041D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4926E541D0D25A8003041D3 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		739C43E6D50828A80AAD531F /* Pods_SnoozeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CCFF235078C2071D8C7BD1 /* Pods-Snooze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snooze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snooze/Pods-Snooze.debug.xcconfig"; sourceTree = "<group>"; };
 		98AA6C0A123ACFC46A3F0B4E /* Pods_SnoozeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnoozeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF9694E1D159B1F00B44B49 /* SlantingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlantingView.swift; sourceTree = "<group>"; };
+		ACF969501D164DFE00B44B49 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Helpers/Extensions.swift; sourceTree = "<group>"; };
 		B4926E4D1D0D25A8003041D3 /* Snooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4926E501D0D25A8003041D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4926E521D0D25A8003041D3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B4926E541D0D25A8003041D3 /* Main.storyboard */,
+				ACF9694E1D159B1F00B44B49 /* SlantingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B4926E8E1D0D2913003041D3 /* Constants.swift */,
+				ACF969501D164DFE00B44B49 /* Extensions.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -647,6 +653,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF969511D164DFE00B44B49 /* Extensions.swift in Sources */,
+				ACF9694F1D159B1F00B44B49 /* SlantingView.swift in Sources */,
 				B4926E531D0D25A8003041D3 /* SplashViewController.swift in Sources */,
 				B4926E511D0D25A8003041D3 /* AppDelegate.swift in Sources */,
 				B4926E8F1D0D2913003041D3 /* Constants.swift in Sources */,
