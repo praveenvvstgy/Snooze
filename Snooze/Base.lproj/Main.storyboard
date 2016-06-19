@@ -74,6 +74,19 @@
                                     <constraint firstItem="WXO-se-eCi" firstAttribute="centerY" secondItem="0uH-CF-mAr" secondAttribute="centerY" multiplier="0.5" id="M3k-8w-hnw"/>
                                     <constraint firstItem="6y6-wH-IAU" firstAttribute="top" secondItem="WXO-se-eCi" secondAttribute="bottom" constant="8" id="l6g-hs-Hf7"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shortOffset">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="longOffset">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="longerEdge" value="left"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="slantedEdge" value="bottom"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="slantingRectColor">
+                                        <color key="value" red="0.1450980392" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-Uv-RiD">
                                 <rect key="frame" x="-4" y="397" width="328" height="170.5"/>
@@ -173,6 +186,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="170" y="323"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="yf4-ag-sAc">
+            <objects>
+                <viewController id="45U-4u-jDq" customClass="LoginViewController" customModule="Snooze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SyL-tM-CiG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gvf-6B-Glf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJ4-Mi-jge">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNV-i7-mvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="323"/>
         </scene>
     </scenes>
     <resources>
